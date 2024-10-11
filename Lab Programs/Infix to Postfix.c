@@ -87,8 +87,7 @@ int main() {
     int top = -1;
 
     printf("Enter the infix Expression: ");
-    fgets(infix, sizeof(infix), stdin);
-    infix[strcspn(infix, "\n")] = 0; // Remove the newline character
+    gets(infix);
 
     intoPost(infix, postfix, stack, &top, n);
 
