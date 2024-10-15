@@ -53,7 +53,7 @@ int main() {
         return 1;
     }
     int stack[n];
-    int *top = -1;
+    int top = -1;                   //Its best not to initialise this as *top 
     push(1, stack, n, &top);
     push(2, stack, n, &top);
     push(3, stack, n, &top);
